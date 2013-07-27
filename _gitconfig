@@ -1,0 +1,21 @@
+[user]
+	name = pright
+	email = pright-xj@163.com
+[http]
+	sslVerify = false
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[merge]
+    tool = meld
+[mergetool]
+    prompt = false
+[sendemail]
+	smtpserver = smtp.163.com
+	smtpserverport = 25
+	smtpuser = pright-xj@163.com

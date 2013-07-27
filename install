@@ -1,0 +1,8 @@
+#!/bin/sh
+
+home=$HOME
+cwd=$(pwd)
+
+ln -sf $cwd/_gitconfig $home/.gitconfig
+
+exit 0
