@@ -9,16 +9,20 @@
 [branch]
 	autosetuprebase = always
 [diff]
-    tool = meld
+	tool = meld
 [difftool]
-    prompt = false
+	prompt = false
 [merge]
-    tool = meld
+	tool = meld
 [mergetool]
-    prompt = false
+	prompt = false
 [sendemail]
 	smtpserver = smtp.163.com
 	smtpserverport = 25
 	smtpuser = pright-xj@163.com
 [github]
 	user = pright
+#[gc]
+	#auto = 0
+[alias]
+	pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
