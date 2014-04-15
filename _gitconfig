@@ -25,5 +25,5 @@
 #[gc]
 	#auto = 0
 [alias]
-	pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
-    subup = "submodule update --init --recursive --remote"
+	pa = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
+    pr = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
