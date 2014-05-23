@@ -45,5 +45,6 @@
     pr = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
 [core]
 	whitespace = trailing-space,space-before-tab
+	quotepath = false
 [apply]
 	whitespace = fix
