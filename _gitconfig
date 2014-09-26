@@ -31,6 +31,7 @@
     sma = "submodule add"
     smu = "submodule update --init" 
     smr = "submodule update --init --recursive" 
+    smrr = "submodule update --init --recursive --remote" 
     df = "diff"
     cp = "cherry-pick"
     st = "status"
@@ -42,7 +43,7 @@
     br = "branch"
     rb = "rebase"
     pa = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
-    pr = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
+    par = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
 [core]
 	whitespace = trailing-space,space-before-tab
 	quotepath = false
