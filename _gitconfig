@@ -44,6 +44,7 @@
     rb = "rebase"
     pa = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
     par = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
+    wc = "whatchanged"
 [core]
 	whitespace = trailing-space,space-before-tab
 	quotepath = false
