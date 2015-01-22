@@ -50,3 +50,5 @@
 	quotepath = false
 [apply]
 	whitespace = fix
+[credential]
+	helper = cache
