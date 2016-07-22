@@ -26,7 +26,6 @@
 	#auto = 0
 [alias]
     cl = "clone"
-    rm = "remote"
     sm = "submodule"
     sma = "submodule add"
     smu = "submodule update --init" 
@@ -37,8 +36,9 @@
     st = "status"
     cm = "commit"
     ca = "commit --amend"
-    pl = "pull"
+    pl = "pull --rebase"
     ps = "push"
+    mg = "merge --no-ff"
     co = "checkout"
     br = "branch"
     rb = "rebase"
@@ -46,9 +46,12 @@
     par = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
     wc = "whatchanged"
 [core]
+    excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
 	quotepath = false
 [apply]
 	whitespace = fix
 [credential]
 	helper = cache
+[color]
+	ui = auto
