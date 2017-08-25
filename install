@@ -3,6 +3,7 @@
 home=$HOME
 cwd=$(pwd)
 
+ln -sf $cwd/_gitignore $home/.gitignore
 ln -sf $cwd/_gitconfig $home/.gitconfig
 
 exit 0
