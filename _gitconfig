@@ -26,30 +26,31 @@
 #[gc]
 	#auto = 0
 [alias]
-    cl = "clone"
-    sm = "submodule"
-    sma = "submodule add"
-    smu = "submodule update --init" 
-    smr = "submodule update --init --recursive" 
-    smrr = "submodule update --init --recursive --remote" 
-    df = "diff"
-    cp = "cherry-pick"
-    st = "status"
-    cm = "commit"
-    ca = "commit --amend"
-    pl = "pull --rebase"
-    ps = "push"
-    mg = "merge --no-ff"
-    co = "checkout"
-    br = "branch"
-    rb = "rebase"
-    pa = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
-    par = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
-    wc = "whatchanged"
+	cl = "clone"
+	sm = "submodule"
+	sma = "submodule add"
+	smu = "submodule update --init" 
+	smr = "submodule update --init --recursive" 
+	smrr = "submodule update --init --recursive --remote" 
+	df = "diff"
+	cp = "cherry-pick"
+	st = "status"
+	cm = "commit"
+	ca = "commit --amend"
+	pl = "pull --rebase"
+	ps = "push"
+	mg = "merge --no-ff"
+	co = "checkout"
+	br = "branch"
+	rb = "rebase"
+	pa = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
+	par = "!f(){ git pull \"$@\" && git submodule update --init --recursive --remote; }; f"
+	wc = "whatchanged"
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
 	quotepath = false
+	editor = vim
 [apply]
 	whitespace = fix
 [credential]
