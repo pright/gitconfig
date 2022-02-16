@@ -33,6 +33,7 @@
 	smr = "submodule update --init --recursive" 
 	smrr = "submodule update --init --recursive --remote" 
 	df = "diff"
+	dft = "difftool"
 	cp = "cherry-pick"
 	st = "status"
 	cm = "commit"
