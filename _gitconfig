@@ -36,6 +36,7 @@
 	dft = "difftool"
 	cp = "cherry-pick"
 	st = "status"
+	sti = "status --ignored"
 	cm = "commit"
 	ca = "commit --amend"
 	pl = "pull --rebase"
